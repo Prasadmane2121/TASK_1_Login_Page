@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Success</title>
+</head>
+<body>
+<form name="fn">
+	<h1> Login Succesfully</h1> 
+	<!--<table>
+		<tr><th>Username</th><th>Password</th></tr>
+		<tr><td>${data.username}</td><th>${data.password}</td></tr>
+	</table>-->
+<input type="button" onclick="goback()" value="Back" id="back">
+</form>
+</body>
+<script type="text/javascript">
+function goback(){
+	document.fn.action="back"
+	document.fn.submit();
+}
+</script>
+<style>
+table,td ,th{
+  border: 0.1px solid black;
+}
+body{
+          display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+}
+
+#back{
+text-decoration:none;
+background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 8px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 10px;
+  
+  margin-left:55px;
+  margin-right:10px;
+  }
+  #back:hover{
+    background-color: orange;
+  }
+</style>
+</html>
